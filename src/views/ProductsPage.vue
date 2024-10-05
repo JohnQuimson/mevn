@@ -19,7 +19,7 @@ export default {
         class="product-item"
         v-bind:key="product.id"
       >
-        <img v-bind:src="product.imageUrl" alt="" />
+        <img :src="product.imageUrl" alt="" />
         <h3 class="product-name">{{ product.name }}</h3>
         <p class="product-price">{{ product.price }}€</p>
         <router-link v-bind:to="`/products/${product.id}`">

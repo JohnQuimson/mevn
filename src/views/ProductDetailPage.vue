@@ -14,7 +14,7 @@ export default {
 <template>
   <div id="page-wrap">
     <div id="img-wrap">
-      <img v-bind:src="product.imageUrl" alt="" />
+      <img :src="product.imageUrl" alt="" />
     </div>
     <div id="product-details">
       <h1>{{ product.name }}</h1>

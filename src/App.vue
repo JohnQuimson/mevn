@@ -1,9 +1,17 @@
+<script>
+import NavbarComponent from './components/NavbarComponent.vue';
+
+export default {
+  name: 'App',
+  components: {
+    NavbarComponent,
+  },
+};
+</script>
+
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    <NavbarComponent />
     <router-view />
   </div>
 </template>
