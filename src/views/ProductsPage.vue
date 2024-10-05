@@ -1,3 +1,16 @@
+<script>
+import { products } from '@/fake-data';
+
+export default {
+  name: 'ProductsPage',
+  data() {
+    return {
+      products,
+    };
+  },
+};
+</script>
+
 <template>
   <div id="page-wrap">
     <div class="grid-wrap">
@@ -16,19 +29,6 @@
     </div>
   </div>
 </template>
-
-<script>
-import { products } from '@/fake-data';
-
-export default {
-  name: 'ProductsPage',
-  data() {
-    return {
-      products,
-    };
-  },
-};
-</script>
 
 <style scoped>
 .grid-wrap {
